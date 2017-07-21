@@ -1,2 +1,3 @@
 # Se: https://github.com/tomav/docker-mailserver/wiki/Configure-Aliases
-svif@prodekanus.auitdrift.client.au.dk sysadm@vifred.dk
+svif@prodekanus.studorg.au.dk sysadm@vifred.dk
+root@prodekanus.studorg.au.dk sysadm@vifred.dk
