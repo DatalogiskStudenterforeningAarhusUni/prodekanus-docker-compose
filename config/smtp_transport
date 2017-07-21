@@ -7,8 +7,13 @@
 #
 # *** HUSK at koere
 # ***     docker exec -t mail postmap /tmp/docker-mailserver/smtp_transport
-# *** efter aendringer!
+# *** samt at aendre relay_domains i postfix-main.cf og herefter at genbygge
+# *** containeren efter aendringer!
 #
 taagekammeret.dk           smtp:172.18.0.1:9000
 matfystutor.dk             smtp:172.18.0.1:9001
 kdruk.dk		   smtp:172.18.0.1:9002
+alkymia.dk		   smtp:172.18.0.1:9002
+nanorama.dk		   smtp:172.18.0.1:9002
+dsau.dk		           smtp:172.18.0.1:9002
+madsfoek.dk		   smtp:172.18.0.1:9002
