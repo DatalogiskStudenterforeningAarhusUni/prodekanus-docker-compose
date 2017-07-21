@@ -17,10 +17,11 @@ services:
     - mailstate:/var/lib/dockermail
     - ./config/:/tmp/docker-mailserver/
     - ./letsencrypt:/etc/letsencrypt/
+    - /home/docker/log:/var/log/
     environment:
     - ENABLE_SPAMASSASSIN=1
     - ENABLE_CLAMAV=1
-    - ENABLE_FAIL2BAN=0
+    - ENABLE_FAIL2BAN=1
     - ENABLE_POSTGREY=0
     - ONE_DIR=1
     - DMS_DEBUG=1
