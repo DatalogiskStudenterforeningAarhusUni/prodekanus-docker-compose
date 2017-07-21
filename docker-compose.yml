@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+  mail:
+    restart: always
+    image: tvial/docker-mailserver:latest
+    hostname: prodekanus
+    domainname: studorg.au.dk
+    container_name: mail
+    ports:
+    - "25:25"
+    - "143:143"
+    - "587:587"
+    - "993:993"
+    volumes:
+    - maildata:/var/mail
+    - mailstate:/var/lib/dockermail
+    - ./config/:/tmp/docker-mailserver/
+    - ./letsencrypt:/etc/letsencrypt/
+    environment:
+    - ENABLE_SPAMASSASSIN=1
+    - ENABLE_CLAMAV=1
+    - ENABLE_FAIL2BAN=0
+    - ENABLE_POSTGREY=0
+    - ONE_DIR=1
+    - DMS_DEBUG=1
+    - OVERRIDE_HOSTNAME=prodekanus.studorg.au.dk
+    - SSL_TYPE=letsencrypt
+    cap_add:
+    - NET_ADMIN
+
+volumes:
+  maildata:
+    driver: local
+  mailstate:
+    driver: local
+    

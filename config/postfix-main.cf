@@ -1,0 +1,11 @@
+# Se https://github.com/tomav/docker-mailserver/wiki/Overwrite-Default-Postfix-Configuration
+#
+
+mynetworks = 127.0.0.0/8 [::1]/128 [fe80::]/64 172.18.0.2/32 172.18.0.1/32
+mydestination = $myhostname, localhost.$myhostname, localhost, prodekanus.scitechtinget.dk, prodekanus.auitdrift.client.au.dk
+relayhost = smtp01.uni.au.dk
+recipient_delimiter = +
+transport_maps = hash:/tmp/docker-mailserver/smtp_transport
+relay_domains = taagekammeret.dk matfystutor.dk kdruk.dk
+
+# Ja, sidste parameter skal slutte med \n, saa denne linje maa ikke fjernes.

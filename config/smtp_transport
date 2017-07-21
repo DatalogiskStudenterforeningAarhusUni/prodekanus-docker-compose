@@ -1,0 +1,14 @@
+# Table of special transport method for domains in
+# virtual_mailbox_domains. See postmap(5), virtual(5) and
+# transport(5).
+#
+# Der er lavet en autoritativ liste paa GitHub. Al orgmail ender samme sted.
+# /svif, 2017-07-21
+#
+# *** HUSK at koere
+# ***     docker exec -t mail postmap /tmp/docker-mailserver/smtp_transport
+# *** efter aendringer!
+#
+taagekammeret.dk           smtp:172.18.0.1:9000
+matfystutor.dk             smtp:172.18.0.1:9001
+kdruk.dk		   smtp:172.18.0.1:9002

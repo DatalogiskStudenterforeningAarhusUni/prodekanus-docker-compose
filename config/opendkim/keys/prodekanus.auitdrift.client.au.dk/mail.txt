@@ -1,0 +1,2 @@
+mail._domainkey	IN	TXT	( "v=DKIM1; k=rsa; "
+	  "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCuzzHwtAn+5BD1lmoTdxx3M2yKlNjTulZoH2wG3UmcSeDM/6ALZomf6aaBa9e/Q2TejiePXCtDEED2ss2erFF0g+Y5grikNX/TaPqaMDRBWnxtBqw6JwWFF6j4xTxHDE8r7g9FJKLRc0KAjSItSw/2XNWdhchtxhUhN90GVAZiHQIDAQAB" )  ; ----- DKIM key mail for prodekanus.auitdrift.client.au.dk
