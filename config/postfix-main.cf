@@ -6,6 +6,6 @@ mydestination = localhost, prodekanus.scitechtinget.dk, prodekanus.auitdrift.cli
 relayhost = smtp01.uni.au.dk
 recipient_delimiter = +
 transport_maps = hash:/tmp/docker-mailserver/smtp_transport
-relay_domains = taagekammeret.dk matfystutor.dk kdruk.dk alkymia.dk nanorama.dk dsau.dk madsfoek.dk
+relay_domains = taagekammeret.dk matfystutor.dk alkymia.dk dsau.dk fysiskfredagsbar.dk kdruk.dk madsfoek.dk nanorama.dk nova-aarhus.dk scitechtinget.dk
 
 # Ja, sidste parameter skal slutte med \n, saa denne linje maa ikke fjernes.

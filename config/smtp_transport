@@ -12,8 +12,11 @@
 #
 taagekammeret.dk           smtp:172.18.0.1:9000
 matfystutor.dk             smtp:172.18.0.1:9001
-kdruk.dk		   smtp:172.18.0.1:9002
 alkymia.dk		   smtp:172.18.0.1:9002
-nanorama.dk		   smtp:172.18.0.1:9002
 dsau.dk		           smtp:172.18.0.1:9002
+fysiskfredagsbar.dk	   smtp:172.18.0.1:9002
+kdruk.dk		   smtp:172.18.0.1:9002
 madsfoek.dk		   smtp:172.18.0.1:9002
+nanorama.dk		   smtp:172.18.0.1:9002
+nova-aarhus.dk		   smtp:172.18.0.1:9002
+scitechtinget.dk	   smtp:172.18.0.1:9002
