@@ -18,6 +18,7 @@ services:
     - ./config/:/tmp/docker-mailserver/
     - ./letsencrypt:/etc/letsencrypt/
     - /home/docker/log:/var/log/
+    - ./postfix-policyd-spf-python:/etc/postfix-policyd-spf-python
     environment:
     - ENABLE_SPAMASSASSIN=1
     - ENABLE_CLAMAV=1
@@ -35,4 +36,3 @@ volumes:
     driver: local
   mailstate:
     driver: local
-    
