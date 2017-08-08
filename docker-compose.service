@@ -12,7 +12,6 @@ Group=docker
 Restart=always
 RestartSec=5
 WorkingDirectory=/home/docker/compose
-ExecStart=/usr/bin/docker-compose start
-ExecStart=/usr/bin/docker-compose logs --tail=0 -f
+ExecStart=/bin/sh -c "docker-compose start && docker-compose logs --tail=0 -f"
 ExecStop=/usr/bin/docker-compose stop
 ExecStop=/bin/sleep 5
