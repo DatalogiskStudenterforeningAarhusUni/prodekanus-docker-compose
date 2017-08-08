@@ -1,5 +1,7 @@
 [Unit]
 Description=docker-compose on prodekanus
+Requires=docker.service
+After=docker.service
 
 [Install]
 WantedBy=multi-user.target
@@ -10,3 +12,4 @@ Group=docker
 Restart=always
 WorkingDirectory=/home/docker/compose
 ExecStart=/usr/bin/docker-compose up --no-build --no-recreate
+ExecStop=/usr/bin/docker-compose stop
