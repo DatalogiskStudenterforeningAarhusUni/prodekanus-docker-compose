@@ -9,8 +9,6 @@ WantedBy=multi-user.target
 [Service]
 User=docker
 Group=docker
-Restart=always
-RestartSec=5
 WorkingDirectory=/home/docker/compose
 ExecStart=/bin/sh -c "docker-compose start && docker-compose logs --tail=0 -f"
 ExecStop=/usr/bin/docker-compose stop
