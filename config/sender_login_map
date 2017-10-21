@@ -1,0 +1,42 @@
+# Table mapping MAIL FROM addresses to SASL login usernames.
+# Must specify
+# smtpd_sender_restrictions=reject_authenticated_sender_login_mismatch
+# and
+# smtpd_sender_login_maps = hash:/tmp/docker-mailserver/sender_login_map
+# in main.cf.
+# Quoting postconf(5):
+# The following search operations are done with a sender address of user@domain:
+#
+# 1) user@domain
+#     This table lookup is always done and has the highest precedence.
+# 2) user
+#     This table lookup is done only when the domain part of the sender address
+#     matches $myorigin, $mydestination, $inet_interfaces or $proxy_interfaces.
+# 3) @domain
+#     This table lookup is done last and has the lowest precedence.
+#
+# In all cases the result of table lookup must be either "not found"
+# or a list of SASL login names separated by comma and/or whitespace.
+#
+# *** HUSK at koere
+# ***     docker exec -t mail postmap /tmp/docker-mailserver/sender_login_map
+# *** og herefter at genbygge containeren efter aendringer!
+
+form13@taagekammeret.dk rav@prodekanus.studorg.au.dk
+
+best@taagekammeret.dk cerm17@prodekanus.studorg.au.dk,form17@prodekanus.studorg.au.dk,inka17@prodekanus.studorg.au.dk,nf17@prodekanus.studorg.au.dk,pr17@prodekanus.studorg.au.dk,sekr17@prodekanus.studorg.au.dk,vc17@prodekanus.studorg.au.dk
+
+cerm@taagekammeret.dk cerm17@prodekanus.studorg.au.dk
+cerm17@taagekammeret.dk cerm17@prodekanus.studorg.au.dk
+form@taagekammeret.dk form17@prodekanus.studorg.au.dk
+form17@taagekammeret.dk form17@prodekanus.studorg.au.dk
+inka@taagekammeret.dk inka17@prodekanus.studorg.au.dk
+inka17@taagekammeret.dk inka17@prodekanus.studorg.au.dk
+nf@taagekammeret.dk nf17@prodekanus.studorg.au.dk
+nf17@taagekammeret.dk nf17@prodekanus.studorg.au.dk
+pr@taagekammeret.dk pr17@prodekanus.studorg.au.dk
+pr17@taagekammeret.dk pr17@prodekanus.studorg.au.dk
+sekr@taagekammeret.dk sekr17@prodekanus.studorg.au.dk
+sekr17@taagekammeret.dk sekr17@prodekanus.studorg.au.dk
+vc@taagekammeret.dk vc17@prodekanus.studorg.au.dk
+vc17@taagekammeret.dk vc17@prodekanus.studorg.au.dk

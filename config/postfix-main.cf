@@ -7,5 +7,7 @@ relayhost = smtp01.uni.au.dk
 recipient_delimiter = +
 transport_maps = hash:/tmp/docker-mailserver/smtp_transport
 relay_domains = taagekammeret.dk matfystutor.dk alkymia.dk dsau.dk fysiskfredagsbar.dk kdruk.dk madsfoek.dk nanorama.dk nova-aarhus.dk scitechtinget.dk
+smtpd_sender_restrictions = reject_authenticated_sender_login_mismatch
+smtpd_sender_login_maps = hash:/tmp/docker-mailserver/sender_login_map
 
 # Ja, sidste parameter skal slutte med \n, saa denne linje maa ikke fjernes.
