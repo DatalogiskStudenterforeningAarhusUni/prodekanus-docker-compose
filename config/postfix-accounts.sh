@@ -6,7 +6,7 @@ ACCOUNTS_INPUT=postfix-accounts/postfix-accounts.txt
 ACCOUNTS_TMP=postfix-accounts.cf.tmp
 ACCOUNTS_OUTPUT=postfix-accounts.cf
 
-if ! [ -r "$ACCOUNTS_FILENAME" ]; then
+if ! [ -r "$ACCOUNTS_INPUT" ]; then
 	echo "Cannot read $ACCOUNTS_INPUT; exiting" >&2
 	exit
 fi
