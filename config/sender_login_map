@@ -22,6 +22,7 @@
 # ***     docker exec -t mail postmap /tmp/docker-mailserver/sender_login_map
 # *** og herefter at genbygge containeren efter aendringer!
 
+sekr12@taagekammeret.dk jakobmoss@prodekanus.studorg.au.dk
 form13@taagekammeret.dk rav@prodekanus.studorg.au.dk
 
 best@taagekammeret.dk cerm17@prodekanus.studorg.au.dk,form17@prodekanus.studorg.au.dk,inka17@prodekanus.studorg.au.dk,nf17@prodekanus.studorg.au.dk,pr17@prodekanus.studorg.au.dk,sekr17@prodekanus.studorg.au.dk,vc17@prodekanus.studorg.au.dk
