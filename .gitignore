@@ -3,3 +3,6 @@
 /letsencrypt/live/prodekanus.studorg.au.dk/*.pem
 /config/opendkim/keys/prodekanus.auitdrift.client.au.dk/mail.private
 /config/smtp_transport.db
+/config/sender_login_map.db
+/config/postfix-accounts
+/config/postfix-accounts.cf
