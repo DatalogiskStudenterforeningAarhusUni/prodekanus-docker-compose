@@ -9,9 +9,5 @@ transport_maps = hash:/tmp/docker-mailserver/smtp_transport
 relay_domains = taagekammeret.dk matfystutor.dk alkymia.dk dsau.dk fysiskfredagsbar.dk kdruk.dk madsfoek.dk nanorama.dk nova-aarhus.dk scitechtinget.dk
 smtpd_sender_restrictions = reject_authenticated_sender_login_mismatch
 smtpd_sender_login_maps = hash:/tmp/docker-mailserver/sender_login_map
-# The initial 220 server greeting is severely delayed when DNS is broken,
-# so just disable looking up the peername - since we're not receiving email
-# from the wide internet anyway, it's not important for us.
-smtpd_peername_lookup = no
 
 # Ja, sidste parameter skal slutte med \n, saa denne linje maa ikke fjernes.
