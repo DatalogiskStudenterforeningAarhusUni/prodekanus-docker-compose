@@ -1,0 +1,6 @@
+header TIVI_SUBJ_TEST	Subject =~ /mysubjectspamtest/i
+score TIVI_SUBJ_TEST	20.0
+header MSFT_HIGH_CONFIDENCE_SPAM	X-Forefront-Antispam-Report =~ /CAT:HSPM/i
+score MSFT_HIGH_CONFIDENCE_SPAM	20.0
+header RAV_TEST	X-Rav-Reject-Test =~ /CAT:HSPM/i
+score RAV_TEST	20.0
